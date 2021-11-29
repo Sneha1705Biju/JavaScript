@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/Javascript final assignment/style/myStyle.css">
+        <script src="/Javascript final assignment/script/myScript.js"></script>
+    </head>
+    <body>
+        <!-- Heading -->
+        <div id="heading">
+            <h1>Submit your application</h1>
+        <h3>for .NET Developer (Fresher)</h3>
+        </div>
+        <!-- Form details -->
+        
+        <form>
+        <div id="fields">
+            <h3>Personal Information:</h3> <br>
+            <p>Name as per ID proof <label id="required">*</label></p>
+            <input type="text" name="name" placeholder="Name">
+            <p>Father's Name <label id="required">*</label></p>
+            <input type="text" name="father name" placeholder="Father's Name">
+            <p>Email <label id="required">*</label></p>
+            <input type="text" name="email" id="mail" placeholder="abc@def.xyz">
+            <label id="lbltext1">Invalid</label> 
+            <p>Date of birth <label id="required">*</label></p>
+            <input type="text" name="dob" id="dob" placeholder="DD-MM-YYYY">
+            <label id="lbltext2">Invalid</label> 
+            <p>Mobile Number <label id="required">*</label></p>
+            <input type="text" name="mobile" id="mobile" placeholder="xxxxxxxxxx">
+            <label id="lbltext3">Invalid</label>
+
+            <!-- Current address -->
+            <div id="currentaddress">
+                <p>Current Address <label id="required">*</label></p>
+            <input type="text" name="address" id="address" placeholder="Address line 1">
+            <input type="text" name="address" id="address" placeholder="Address line 2">
+            <input type="text" name="address" id="address" placeholder="City">
+            <select name="address" id="address">
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andra">Andra Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+            <input type="text" name="address" id="code" placeholder="Zip Code">
+            <label id="lbltext4">Invalid</label>
+
+            </div>
+            <!-- Permanent address -->
+            <div id="permanentAddress">
+                <p>Permanent Address <label id="required">*</label>
+                    <input type="checkbox" id="check" onselect="submitCheck()">Same as Current Address
+                </p>
+                <input type="text" name="address" id="address" placeholder="Address line 1">
+            <input type="text" name="address" id="address" placeholder="Address line 2">
+            <input type="text" name="address" id="address" placeholder="City">
+            <select name="address" id="address">
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andra">Andra Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+            <input type="text" name="address" id="code" placeholder="Zip Code">
+            </div>
+
+            <!-- Profile photo -->
+            <p>Upload Profile Photo <label id="required">*</label>(JPF/PNG format only)
+               
+            </p>
+            <p>Please upload a photo of yourself. Your face should be clearly visible. Make sure the image size does not exceed 500KB</p>
+            <input type="file" name="photo" id="photo">
+
+           
+            <button type="button" onclick="dateOfBirth()">Submit</button>
+        </div>
+    </form>
+    </body>
+</html>
+
+

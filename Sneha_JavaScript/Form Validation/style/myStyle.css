@@ -1,0 +1,22 @@
+#heading{
+    text-align: center;
+}
+#fields{
+    margin: 7%;
+}
+input{
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+#lbltext2, #lbltext1, #lbltext3, #lbltext4{
+    color: red; 
+    visibility:hidden;
+} 
+
+#required{
+    color: red;
+    visibility: visible;
+    font-size: 10;
+}
